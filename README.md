@@ -1,115 +1,257 @@
-# # 2ESR
-<h1 align="center">Repositório de Aulas e Tarefas – Java (2ESR)</h1>
-<p align="center">Exercícios práticos e projetos desenvolvidos em Java para a disciplina de Engenharia de Software / DDD na FIAP</p>
+<h1 align="center">Repositório de Estudos e Projetos – Java</h1>
+
+<p align="center">
+Exercícios, tarefas e projetos desenvolvidos durante minha jornada de aprendizagem em Java na Engenharia de Software e em cursos complementares.
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-21+-ED8B00?logo=openjdk&logoColor=white" alt="Java 21+">
   <img src="https://img.shields.io/badge/FIAP-Engenharia%20de%20Software-E4002B" alt="FIAP">
+  <img src="https://img.shields.io/badge/Alura-Java-0A66C2" alt="Alura">
 </p>
 
 ---
 
 ### 📖 Sobre o Projeto
 
-Este repositório documenta a progressão da aprendizagem em programação orientada a objetos com Java. Ele contém todos os códigos desenvolvidos durante as aulas (da Aula 01 à Aula 08) e as respetivas tarefas práticas de consolidação.
+Este repositório reúne exercícios, tarefas e projetos desenvolvidos durante meus estudos de **Java**, documentando minha evolução desde os fundamentos da linguagem até a criação de aplicações práticas.
 
-Os projetos evoluem desde a sintaxe básica e uso de variáveis, passando por entrada e saída de dados com interface gráfica e consola, até à modelação de classes do mundo real (Orientação a Objetos) com atributos, métodos e regras de negócio de cálculo financeiro.
+Os conteúdos foram desenvolvidos principalmente durante a disciplina de **Engenharia de Software / DDD na FIAP** e também durante o curso de **Java da Alura**, permitindo colocar em prática conceitos de programação e lógica por meio de diferentes desafios e aplicações.
+
+Entre os conteúdos desenvolvidos estão exercícios envolvendo variáveis, operadores, entrada e saída de dados, estruturas condicionais e de repetição, além de projetos com classes, atributos, métodos e regras de negócio.
 
 ---
 
 ### 📁 Estrutura do Projeto
 
-O repositório está dividido em duas categorias principais de aprendizagem:
+O repositório está organizado de acordo com os diferentes momentos e atividades dos estudos:
 
 ```text
 Java/
-├── Aula01/ a Aula08/     # Códigos abordados em sala de aula
-│   ├── Primitivo.java    # Fundamentos e tipos de variáveis
-│   ├── EntradaDeDados... # I/O com Scanner e JOptionPane
-│   └── classes/          # Introdução à POO (Radio, Televisor, ArCondicionado)
 │
-└── Tarefas/              # Exercícios práticos e de lógica de negócio
-    ├── Tarefa01/         # Cálculos matemáticos simples (Média, Idade, Área)
-    ├── Tarefa02/         # Sistema de Folha de Pagamento
-    └── Tarefa03/         # Sistema de Gestão de Ingressos para Eventos
-
+├── Aula01/ a Aula08/
+│   ├── Primitivo.java
+│   ├── EntradaDeDados...
+│   └── classes/
+│       ├── Radio
+│       ├── Televisor
+│       └── ArCondicionado
+│
+├── Tarefas/
+│   ├── Tarefa01/
+│   │   └── Cálculos matemáticos
+│   │
+│   ├── Tarefa02/
+│   │   └── Sistema de Folha de Pagamento
+│   │
+│   └── Tarefa03/
+│       └── Sistema de Gestão de Ingressos
+│
+└── Projetos/
+    └── ContaBancaria/
+        └── ContaBancaria.java
 ```
+
+A estrutura pode ser expandida conforme novos exercícios e projetos forem desenvolvidos.
 
 ---
 
-### 🧮 Principais Regras de Negócio (Tarefas em Destaque)
+### 🎓 Conteúdos e Projetos Desenvolvidos
 
-O repositório contém várias implementações focadas na lógica de negócio. Destacam-se:
+#### 🏫 Atividades da FIAP
 
-**Classe `FolhaDePagamento` (Tarefa 02)**
+Durante as aulas de Engenharia de Software / DDD, foram desenvolvidos exercícios e tarefas para consolidar os fundamentos de Java e introduzir conceitos de programação orientada a objetos.
 
-* `salarioBruto` e `numeroDeDependentes` — dados base do colaborador.
-* `descontoINSS` e `valorPlanoDeSaude` — variáveis para cálculo de deduções.
-* `calcularSalarioLiquido()` — deduz a percentagem de INSS e o custo do plano de saúde (multiplicado pelos dependentes + 1) ao salário bruto.
+Entre os principais conteúdos estão:
 
-**Classe `Eventos` (Tarefa 03)**
+* Tipos de dados e variáveis
+* Entrada e saída de dados
+* Operadores matemáticos e lógicos
+* `Scanner`
+* `JOptionPane`
+* Classes e atributos
+* Métodos
+* Introdução à Orientação a Objetos
+* Regras de negócio
+* Cálculos financeiros
 
-* `bebida`, `comida`, `equipe`, `show` — despesas totais do evento.
-* `calcularValorDoIngresso()` — soma todas as despesas, aplica a margem de `lucro` desejada e divide pelo número de `convidados` para definir o preço unitário do ingresso.
+Alguns projetos desenvolvidos incluem:
+
+**Folha de Pagamento**
+
+Sistema responsável por realizar cálculos relacionados ao salário de um colaborador, considerando salário bruto, número de dependentes, INSS e plano de saúde.
+
+**Gestão de Eventos**
+
+Aplicação voltada ao cálculo do valor de ingressos de um evento com base nas despesas, quantidade de convidados e margem de lucro.
+
+---
+
+#### 📚 Projeto Final – Curso de Java | Alura
+
+Como desafio final do curso de Java da Alura, foi desenvolvido um sistema de **Conta Bancária** para aplicar os principais conceitos estudados durante o curso.
+
+A aplicação simula uma conta bancária e apresenta um menu interativo no console, permitindo ao usuário realizar diferentes operações.
+
+##### 💰 Funcionalidades
+
+**1. Consultar saldo**
+
+Exibe o saldo atual da conta.
+
+**2. Receber valor**
+
+Permite informar um valor que será adicionado ao saldo da conta.
+
+**3. Transferir valor**
+
+Permite informar um valor para transferência e verifica se existe saldo suficiente antes de realizar a operação.
+
+**4. Sair**
+
+Encerra a execução da aplicação.
+
+O sistema também possui validações para impedir transferências superiores ao saldo disponível e informar quando uma opção inválida é selecionada.
+
+---
+
+### 🧠 Principais Conceitos Aplicados
+
+Ao longo das atividades e projetos presentes neste repositório, foram praticados conceitos como:
+
+* Declaração e utilização de variáveis
+* Tipos de dados
+* Operadores de atribuição
+* Operadores aritméticos
+* Operadores relacionais
+* Operadores lógicos
+* Entrada de dados com `Scanner`
+* Saída de dados no console
+* Estruturas condicionais (`if`, `else if`, `else`)
+* Estruturas de repetição (`for` e `while`)
+* Classes e atributos
+* Métodos
+* Regras de negócio
+* Manipulação de valores numéricos
+* Criação de menus interativos
+
+---
+
+### 💻 Exemplo – Conta Bancária
+
+O projeto utiliza variáveis para armazenar os dados iniciais da conta:
+
+```java
+String nome = "Luigi Escudero";
+String tipoConta = "Conta Corrente";
+double saldo = 2500.00;
+int opcao = 0;
+```
+
+O menu permanece disponível enquanto o usuário não escolher a opção de saída:
+
+```java
+while (opcao != 4) {
+    // menu e operações
+}
+```
+
+As operações são controladas através de estruturas condicionais:
+
+```java
+if (opcao == 1) {
+    // consultar saldo
+} else if (opcao == 2) {
+    // receber valor
+} else if (opcao == 3) {
+    // transferir valor
+}
+```
+
+Para realizar uma transferência, o sistema verifica se o valor solicitado está dentro do saldo disponível:
+
+```java
+if (valor <= saldo) {
+    saldo = saldo - valor;
+} else {
+    System.out.println("Você não tem saldo o suficiente!");
+}
+```
 
 ---
 
 ### ▶️ Como Executar
 
-**Pré-requisitos:** Java 21 ou superior instalado.
+**Pré-requisitos:**
 
-Pode compilar e executar qualquer ficheiro `Main` ou classe com método principal. Abaixo está o exemplo para rodar a Tarefa 02 via Consola:
+* Java 21 ou superior
+* IntelliJ IDEA ou outra IDE compatível com Java
+
+Clone o repositório:
 
 ```bash
-# Navegar até ao diretório do projeto desejado
-cd Java/Tarefas/Tarefa02
-
-# Compilar as classes
-javac -d out src/br/fiap/com/bean/FolhaDePagamento.java src/br/fiap/com/main/MainScanner.java
-
-# Executar a aplicação
-java -cp out br.fiap.com.main.MainScanner
-
+git clone https://github.com/Lueg2007
 ```
 
----
+Abra o projeto no **IntelliJ IDEA** e execute a classe que possui o método `main`.
 
-### 💻 Exemplo de Uso (Folha de Pagamento)
+Para executar o projeto de Conta Bancária, abra:
 
 ```text
-Digite seu salário bruto: 
-10000
-Digite o número de dependentes: 
-4
-Digite o desconto de INSS: 
-15
-Digite o valor do plano de saúde: 
-150
-
-Salário Bruto: R$ 10000,00
-Número de dependentes: 4
-INSS: 15,0%
-Plano de saúde: R$ 150,00
-Salário líquido: R$ 7750,00
-
+Projetos/ContaBancaria/ContaBancaria.java
 ```
+
+A aplicação será executada diretamente pelo console.
 
 ---
 
 ### 🚀 Tecnologias Utilizadas
 
-| Tecnologia | Uso |
-| --- | --- |
-| **Java 21+** | Linguagem principal para construção da lógica e POO |
-| **java.util.Scanner** | Leitura de dados via consola |
-| **javax.swing.JOptionPane** | Criação de caixas de diálogo para I/O visual |
-| **IntelliJ IDEA** | IDE de desenvolvimento |
+| Tecnologia                  | Utilização                                     |
+| --------------------------- | ---------------------------------------------- |
+| **Java 21+**                | Desenvolvimento das aplicações e exercícios    |
+| **java.util.Scanner**       | Entrada de dados pelo console                  |
+| **javax.swing.JOptionPane** | Entrada e saída de dados por interface gráfica |
+| **IntelliJ IDEA**           | Ambiente de desenvolvimento                    |
+| **Git**                     | Controle de versão                             |
+| **GitHub**                  | Armazenamento e compartilhamento dos projetos  |
 
 ---
 
-### 👥 Autor
+### 📚 Cursos e Formação
+
+**FIAP – Engenharia de Software**
+
+Atividades acadêmicas desenvolvidas durante a graduação, envolvendo fundamentos de programação, Java, DDD e Orientação a Objetos.
+
+**Alura – Curso de Java**
+
+Curso voltado aos fundamentos da linguagem Java, incluindo variáveis, operadores, entrada de dados, estruturas condicionais e estruturas de repetição.
+
+**Instrutora:** Jacqueline Oliveira
+
+---
+
+### 🚀 Próximos Passos
+
+Este repositório continuará sendo atualizado conforme novos conteúdos e projetos forem desenvolvidos.
+
+O objetivo é evoluir gradualmente dos fundamentos de Java para aplicações mais completas, aprofundando conhecimentos em:
+
+* Orientação a Objetos
+* Java
+* SQL
+* Banco de dados
+* APIs
+* Desenvolvimento Backend
+* Boas práticas de programação
+
+---
+
+### 👤 Autor
 
 <table>
+<tr>
 <td align="center">
 <a href="https://github.com/Lueg2007">
 <img src="https://github.com/Lueg2007.png" width="100px;" alt="Lueg2007"/>
@@ -117,7 +259,7 @@ Salário líquido: R$ 7750,00
 <sub><b>Luigi Escudero Grigoletto</b></sub>
 </a>
 <br />
-<sub>RM 562505</sub>
+<sub>Estudante de Engenharia de Software</sub>
 </td>
 </tr>
 </table>
